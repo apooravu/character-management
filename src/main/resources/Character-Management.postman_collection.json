@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "ac6f1d80-4bc4-4097-b797-f11a616e286f",
+		"name": "Character-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ExtractNumber",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/apoorav/Downloads/file.txt"
+						}
+					]
+				},
+				"url": "localhost:8080/character-management/numerics"
+			},
+			"response": []
+		}
+	]
+}
