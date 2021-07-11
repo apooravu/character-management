@@ -1,6 +1,5 @@
 package com.mvp.extract.advice;
 
-import com.mvp.extract.exception.ExecutionInterruptedException;
 import com.mvp.extract.exception.InputStreamOrReadException;
 import com.mvp.extract.exception.NoFileOrContentFoundException;
 import com.mvp.extract.model.ExceptionResponseEntity;
@@ -31,13 +30,6 @@ public class NumericControllerAdvice {
                 e.getMessage());
     }
 
-
-    @ExceptionHandler(ExecutionInterruptedException.class)
-    public ExceptionResponseEntity handleExecutionInterruptedException(ExecutionInterruptedException e) {
-        return new ExceptionResponseEntity(HttpStatus.UNPROCESSABLE_ENTITY.value(),
-                new Date(),
-                e.getMessage());
-    }
 
 }
 
